@@ -1,0 +1,16 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "start": "npx hardhat node",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat ignition deploy ignition/modules/AccountsPayable.ts --network local",
+    "deploy:stg": "npx hardhat ignition deploy ignition/modules/AccountsPayable.ts --network sepolia",
+    "verify:AccountsPayable": "npx hardhat verify --network sepolia 0x09059725E0C8C8456d7A3f2AdE8277cCB7f4d355 0x912643AbC9C91Fea9E1Fdf9CB7ED3763885BFAbE"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.5"
+  }
+}
